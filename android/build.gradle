@@ -1,22 +1,10 @@
 group = "com.mohamednagdy.disable_battery_optimizations_latest"
 version = "1.0"
 
-buildscript {
-    repositories {
-        google()
-        jcenter()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath("com.android.tools.build:gradle:8.0.0")
-    }
-}
-
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 }
